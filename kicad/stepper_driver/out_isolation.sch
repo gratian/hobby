@@ -1,0 +1,254 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:custom
+LIBS:stepper_driver-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 10
+Title "TTL Input CMOS Output Opto Isolator"
+Date "Sun 22 Mar 2015"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4700 3800 4600 3800
+$Comp
+L GND #PWR050
+U 1 1 5510CB26
+P 4600 3800
+AR Path="/5510C07A/5510CB26" Ref="#PWR050"  Part="1" 
+AR Path="/5515BA03/5510CB26" Ref="#PWR072"  Part="1" 
+F 0 "#PWR072" H 4600 3550 50  0001 C CNN
+F 1 "GND" H 4600 3650 50  0000 C CNN
+F 2 "" H 4600 3800 60  0000 C CNN
+F 3 "" H 4600 3800 60  0000 C CNN
+	1    4600 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3700 4700 3700
+$Comp
+L R R7
+U 1 1 5510CB2D
+P 4500 3700
+AR Path="/5510C07A/5510CB2D" Ref="R7"  Part="1" 
+AR Path="/5515BA03/5510CB2D" Ref="R13"  Part="1" 
+F 0 "R7" V 4580 3700 50  0000 C CNN
+F 1 "390" V 4500 3700 50  0000 C CNN
+F 2 "" V 4430 3700 30  0000 C CNN
+F 3 "" H 4500 3700 30  0000 C CNN
+	1    4500 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 6N137S U6
+U 1 1 5510CB39
+P 5150 3750
+AR Path="/5510C07A/5510CB39" Ref="U6"  Part="1" 
+AR Path="/5515BA03/5510CB39" Ref="U12"  Part="1" 
+F 0 "U6" H 5150 3500 60  0000 C CNN
+F 1 "6N137S" H 5150 4000 60  0000 C CNN
+F 2 "" H 5150 3750 60  0000 C CNN
+F 3 "" H 5150 3750 60  0000 C CNN
+	1    5150 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74LVC1G240DBVR U7
+U 1 1 5510CB40
+P 6900 3800
+AR Path="/5510C07A/5510CB40" Ref="U7"  Part="1" 
+AR Path="/5515BA03/5510CB40" Ref="U13"  Part="1" 
+F 0 "U7" H 6900 3500 60  0000 C CNN
+F 1 "SN74LVC1G240DBVR" H 6900 4100 60  0000 C CNN
+F 2 "" H 7000 3625 60  0000 C CNN
+F 3 "" H 7000 3625 60  0000 C CNN
+	1    6900 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR051
+U 1 1 5510CB48
+P 4600 3800
+AR Path="/5510C07A/5510CB48" Ref="#PWR051"  Part="1" 
+AR Path="/5515BA03/5510CB48" Ref="#PWR073"  Part="1" 
+F 0 "#PWR073" H 4600 3550 50  0001 C CNN
+F 1 "GND" H 4600 3650 50  0000 C CNN
+F 2 "" H 4600 3800 60  0000 C CNN
+F 3 "" H 4600 3800 60  0000 C CNN
+	1    4600 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3900 5750 3900
+$Comp
+L +3.3V #PWR052
+U 1 1 55110B66
+P 5750 3450
+AR Path="/5510C07A/55110B66" Ref="#PWR052"  Part="1" 
+AR Path="/5515BA03/55110B66" Ref="#PWR074"  Part="1" 
+F 0 "#PWR074" H 5750 3300 50  0001 C CNN
+F 1 "+3.3V" H 5750 3590 50  0000 C CNN
+F 2 "" H 5750 3450 60  0000 C CNN
+F 3 "" H 5750 3450 60  0000 C CNN
+	1    5750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 55110BA7
+P 5150 4500
+AR Path="/5510C07A/55110BA7" Ref="C4"  Part="1" 
+AR Path="/5515BA03/55110BA7" Ref="C7"  Part="1" 
+F 0 "C4" H 5175 4600 50  0000 L CNN
+F 1 "0.1uF" H 5175 4400 50  0000 L CNN
+F 2 "" H 5188 4350 30  0000 C CNN
+F 3 "" H 5150 4500 60  0000 C CNN
+	1    5150 4500
+	1    0    0    -1  
+$EndComp
+Text HLabel 6400 3650 0    60   Input ~ 0
+~OE
+Text HLabel 4350 3700 0    60   Input ~ 0
+IN_TTL
+Wire Wire Line
+	5650 3800 6400 3800
+$Comp
+L GND #PWR053
+U 1 1 55111358
+P 6350 3950
+AR Path="/5510C07A/55111358" Ref="#PWR053"  Part="1" 
+AR Path="/5515BA03/55111358" Ref="#PWR075"  Part="1" 
+F 0 "#PWR075" H 6350 3700 50  0001 C CNN
+F 1 "GND" H 6350 3800 50  0000 C CNN
+F 2 "" H 6350 3950 60  0000 C CNN
+F 3 "" H 6350 3950 60  0000 C CNN
+	1    6350 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3950 6400 3950
+$Comp
+L +3.3V #PWR054
+U 1 1 5511153A
+P 7550 3450
+AR Path="/5510C07A/5511153A" Ref="#PWR054"  Part="1" 
+AR Path="/5515BA03/5511153A" Ref="#PWR076"  Part="1" 
+F 0 "#PWR076" H 7550 3300 50  0001 C CNN
+F 1 "+3.3V" H 7550 3590 50  0000 C CNN
+F 2 "" H 7550 3450 60  0000 C CNN
+F 3 "" H 7550 3450 60  0000 C CNN
+	1    7550 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR055
+U 1 1 5511173E
+P 5150 4300
+AR Path="/5510C07A/5511173E" Ref="#PWR055"  Part="1" 
+AR Path="/5515BA03/5511173E" Ref="#PWR077"  Part="1" 
+F 0 "#PWR077" H 5150 4150 50  0001 C CNN
+F 1 "+3.3V" H 5150 4440 50  0000 C CNN
+F 2 "" H 5150 4300 60  0000 C CNN
+F 3 "" H 5150 4300 60  0000 C CNN
+	1    5150 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4300 5150 4350
+$Comp
+L GND #PWR056
+U 1 1 551117C0
+P 5150 4700
+AR Path="/5510C07A/551117C0" Ref="#PWR056"  Part="1" 
+AR Path="/5515BA03/551117C0" Ref="#PWR078"  Part="1" 
+F 0 "#PWR078" H 5150 4450 50  0001 C CNN
+F 1 "GND" H 5150 4550 50  0000 C CNN
+F 2 "" H 5150 4700 60  0000 C CNN
+F 3 "" H 5150 4700 60  0000 C CNN
+	1    5150 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4650 5150 4700
+Text HLabel 7550 3950 2    60   Output ~ 0
+OUT_CMOS
+Wire Wire Line
+	7550 3950 7400 3950
+Connection ~ 6000 3800
+Wire Wire Line
+	5750 3600 5650 3600
+Wire Wire Line
+	5750 3450 5750 3700
+Wire Wire Line
+	6000 3500 5750 3500
+Connection ~ 5750 3500
+Wire Wire Line
+	5750 3700 5650 3700
+Connection ~ 5750 3600
+$Comp
+L GND #PWR057
+U 1 1 5510CC97
+P 5750 3900
+AR Path="/5510C07A/5510CC97" Ref="#PWR057"  Part="1" 
+AR Path="/5515BA03/5510CC97" Ref="#PWR079"  Part="1" 
+F 0 "#PWR079" H 5750 3650 50  0001 C CNN
+F 1 "GND" H 5750 3750 50  0000 C CNN
+F 2 "" H 5750 3900 60  0000 C CNN
+F 3 "" H 5750 3900 60  0000 C CNN
+	1    5750 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 55110B99
+P 6000 3650
+AR Path="/5510C07A/55110B99" Ref="R8"  Part="1" 
+AR Path="/5515BA03/55110B99" Ref="R14"  Part="1" 
+F 0 "R8" V 6080 3650 50  0000 C CNN
+F 1 "390" V 6000 3650 50  0000 C CNN
+F 2 "" V 5930 3650 30  0000 C CNN
+F 3 "" H 6000 3650 30  0000 C CNN
+	1    6000 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7400 3650 7550 3650
+Wire Wire Line
+	7550 3650 7550 3450
+$EndSCHEMATC
