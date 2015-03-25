@@ -3,31 +3,31 @@ EESchema-DOCLIB  Version 2.0
 $CMP 6N137S
 D High speed 10MBit/s logic gate optocoupler
 K optocoupler
-F C:/Users/Gratian/AppData/Roaming/SPB_16.6/hobby/kicad/datasheets/6N137-24678.pdf
+F ../datasheets/6N137-24678.pdf
 $ENDCMP
 #
 $CMP MCP23S18
 D 16-bit remote bidirectional I/O port SPI bus
 K port spi
-F /home/gratian/kicad/cnc/pdf/MCP23S18-16-bit-spi-port.pdf
+F ../datasheets/MCP23S18-16-bit-spi-port.pdf
 $ENDCMP
 #
 $CMP SN74LVC1G14DBV
 D Single Schmitt-Trigger Inverter
 K schmitt trigger inverter
-F /home/gratian/kicad/cnc/pdf/SN74LVC1G14.pdf
+F ../datasheets/SN74LVC1G14.pdf
 $ENDCMP
 #
 $CMP SN74LVC1G240DBVR
 D Single Buffer/Driver With 3-State Output
 K buffer driver 3-state
-F /home/gratian/kicad/cnc/pdf/SN74LVC1G240DBVR.pdf
+F ../datasheets/SN74LVC1G240DBVR.pdf
 $ENDCMP
 #
 $CMP TB6560AHQ
 D PWM Chopper-Type Bipolar Driver IC for Stepping Motor Control
 K motor stepper driver
-F /home/gratian/kicad/cnc/pdf/TB6560AHQ.pdf
+F ../datasheets/TB6560AHQ.pdf
 $ENDCMP
 #
 #End Doc Library
