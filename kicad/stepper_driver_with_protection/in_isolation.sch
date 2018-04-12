@@ -1,0 +1,284 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:custom
+LIBS:stepper_driver-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 10
+Title "Quad Stepper Motor Driver"
+Date "2016-12-15"
+Rev "1.0"
+Comp "Gratian & co."
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 6N137S U3
+U 1 1 5510850A
+P 6200 4000
+AR Path="/55107C90/5510850A" Ref="U3"  Part="1" 
+AR Path="/5510B4E2/5510850A" Ref="U5"  Part="1" 
+AR Path="/5512F1A5/5510850A" Ref="U9"  Part="1" 
+AR Path="/55139FA9/5510850A" Ref="U11"  Part="1" 
+AR Path="/5510BF5A/5510850A" Ref="U21"  Part="1" 
+F 0 "U21" H 6200 3750 60  0000 C CNN
+F 1 "6N137S" H 6200 4250 60  0000 C CNN
+F 2 "footprints:SMD-8" H 6200 4000 60  0001 C CNN
+F 3 "" H 6200 4000 60  0000 C CNN
+	1    6200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR038
+U 1 1 55108511
+P 5400 3700
+AR Path="/55107C90/55108511" Ref="#PWR038"  Part="1" 
+AR Path="/5510B4E2/55108511" Ref="#PWR045"  Part="1" 
+AR Path="/5512F1A5/55108511" Ref="#PWR060"  Part="1" 
+AR Path="/55139FA9/55108511" Ref="#PWR067"  Part="1" 
+AR Path="/5510BF5A/55108511" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 5400 3550 50  0001 C CNN
+F 1 "+3.3V" H 5400 3840 50  0000 C CNN
+F 2 "" H 5400 3700 60  0000 C CNN
+F 3 "" H 5400 3700 60  0000 C CNN
+	1    5400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SN74LVC1G14DBV U2
+U 1 1 55108517
+P 4850 3850
+AR Path="/55107C90/55108517" Ref="U2"  Part="1" 
+AR Path="/5510B4E2/55108517" Ref="U4"  Part="1" 
+AR Path="/5512F1A5/55108517" Ref="U8"  Part="1" 
+AR Path="/55139FA9/55108517" Ref="U10"  Part="1" 
+AR Path="/5510BF5A/55108517" Ref="U20"  Part="1" 
+F 0 "U20" H 4850 3550 60  0000 C CNN
+F 1 "SN74LVC1G14DBV" H 4850 4150 60  0000 C CNN
+F 2 "footprints:SOT-23-5" H 4700 4150 60  0001 C CNN
+F 3 "" H 4700 4150 60  0000 C CNN
+	1    4850 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3850 4350 3850
+Wire Wire Line
+	5400 3750 5250 3750
+$Comp
+L R R3
+U 1 1 55108520
+P 5500 3950
+AR Path="/55107C90/55108520" Ref="R3"  Part="1" 
+AR Path="/5510B4E2/55108520" Ref="R5"  Part="1" 
+AR Path="/5512F1A5/55108520" Ref="R9"  Part="1" 
+AR Path="/55139FA9/55108520" Ref="R11"  Part="1" 
+AR Path="/5510BF5A/55108520" Ref="R29"  Part="1" 
+F 0 "R29" V 5580 3950 50  0000 C CNN
+F 1 "220" V 5500 3950 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5430 3950 30  0001 C CNN
+F 3 "" H 5500 3950 30  0000 C CNN
+	1    5500 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 3950 5250 3950
+Wire Wire Line
+	5750 3950 5650 3950
+$Comp
+L GND #PWR039
+U 1 1 55108529
+P 4350 4200
+AR Path="/55107C90/55108529" Ref="#PWR039"  Part="1" 
+AR Path="/5510B4E2/55108529" Ref="#PWR046"  Part="1" 
+AR Path="/5512F1A5/55108529" Ref="#PWR061"  Part="1" 
+AR Path="/55139FA9/55108529" Ref="#PWR068"  Part="1" 
+AR Path="/5510BF5A/55108529" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 4350 3950 50  0001 C CNN
+F 1 "GND" H 4350 4050 50  0000 C CNN
+F 2 "" H 4350 4200 60  0000 C CNN
+F 3 "" H 4350 4200 60  0000 C CNN
+	1    4350 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4000 4350 4000
+$Comp
+L GND #PWR040
+U 1 1 55108530
+P 5600 4250
+AR Path="/55107C90/55108530" Ref="#PWR040"  Part="1" 
+AR Path="/5510B4E2/55108530" Ref="#PWR047"  Part="1" 
+AR Path="/5512F1A5/55108530" Ref="#PWR062"  Part="1" 
+AR Path="/55139FA9/55108530" Ref="#PWR069"  Part="1" 
+AR Path="/5510BF5A/55108530" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 5600 4000 50  0001 C CNN
+F 1 "GND" H 5600 4100 50  0000 C CNN
+F 2 "" H 5600 4250 60  0000 C CNN
+F 3 "" H 5600 4250 60  0000 C CNN
+	1    5600 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR041
+U 1 1 55108537
+P 6750 3700
+AR Path="/55107C90/55108537" Ref="#PWR041"  Part="1" 
+AR Path="/5510B4E2/55108537" Ref="#PWR048"  Part="1" 
+AR Path="/5512F1A5/55108537" Ref="#PWR063"  Part="1" 
+AR Path="/55139FA9/55108537" Ref="#PWR070"  Part="1" 
+AR Path="/5510BF5A/55108537" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 6750 3550 50  0001 C CNN
+F 1 "+5V" H 6750 3840 50  0000 C CNN
+F 2 "" H 6750 3700 60  0000 C CNN
+F 3 "" H 6750 3700 60  0000 C CNN
+	1    6750 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3700 6750 3950
+Wire Wire Line
+	6750 3850 6700 3850
+Wire Wire Line
+	6750 3950 6700 3950
+Connection ~ 6750 3850
+$Comp
+L GND #PWR042
+U 1 1 55108543
+P 6750 4250
+AR Path="/55107C90/55108543" Ref="#PWR042"  Part="1" 
+AR Path="/5510B4E2/55108543" Ref="#PWR049"  Part="1" 
+AR Path="/5512F1A5/55108543" Ref="#PWR064"  Part="1" 
+AR Path="/55139FA9/55108543" Ref="#PWR071"  Part="1" 
+AR Path="/5510BF5A/55108543" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 6750 4000 50  0001 C CNN
+F 1 "GND" H 6750 4100 50  0000 C CNN
+F 2 "" H 6750 4250 60  0000 C CNN
+F 3 "" H 6750 4250 60  0000 C CNN
+	1    6750 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5510854B
+P 6900 3900
+AR Path="/55107C90/5510854B" Ref="R4"  Part="1" 
+AR Path="/5510B4E2/5510854B" Ref="R6"  Part="1" 
+AR Path="/5512F1A5/5510854B" Ref="R10"  Part="1" 
+AR Path="/55139FA9/5510854B" Ref="R12"  Part="1" 
+AR Path="/5510BF5A/5510854B" Ref="R30"  Part="1" 
+F 0 "R30" V 6980 3900 50  0000 C CNN
+F 1 "220" V 6900 3900 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6830 3900 30  0001 C CNN
+F 3 "" H 6900 3900 30  0000 C CNN
+	1    6900 3900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6750 3750 6900 3750
+Connection ~ 6750 3750
+Wire Wire Line
+	6700 4050 7100 4050
+Connection ~ 6900 4050
+Wire Wire Line
+	5400 3750 5400 3700
+$Comp
+L C C2
+U 1 1 55108559
+P 7800 4000
+AR Path="/55107C90/55108559" Ref="C2"  Part="1" 
+AR Path="/5510B4E2/55108559" Ref="C3"  Part="1" 
+AR Path="/5512F1A5/55108559" Ref="C5"  Part="1" 
+AR Path="/55139FA9/55108559" Ref="C6"  Part="1" 
+AR Path="/5510BF5A/55108559" Ref="C30"  Part="1" 
+F 0 "C30" H 7825 4100 50  0000 L CNN
+F 1 "0.1uF" H 7825 3900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 7838 3850 30  0001 C CNN
+F 3 "" H 7800 4000 60  0000 C CNN
+	1    7800 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6900 3750
+Text HLabel 4350 3850 0    60   Input ~ 0
+IN_CMOS
+Text HLabel 7100 4050 2    60   Output ~ 0
+OUT_TTL
+$Comp
+L GND #PWR043
+U 1 1 55108CC5
+P 7800 4250
+AR Path="/55107C90/55108CC5" Ref="#PWR043"  Part="1" 
+AR Path="/5510B4E2/55108CC5" Ref="#PWR050"  Part="1" 
+AR Path="/5512F1A5/55108CC5" Ref="#PWR065"  Part="1" 
+AR Path="/55139FA9/55108CC5" Ref="#PWR072"  Part="1" 
+AR Path="/5510BF5A/55108CC5" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0117" H 7800 4000 50  0001 C CNN
+F 1 "GND" H 7800 4100 50  0000 C CNN
+F 2 "" H 7800 4250 60  0000 C CNN
+F 3 "" H 7800 4250 60  0000 C CNN
+	1    7800 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR044
+U 1 1 55108CDA
+P 7800 3700
+AR Path="/55107C90/55108CDA" Ref="#PWR044"  Part="1" 
+AR Path="/5510B4E2/55108CDA" Ref="#PWR051"  Part="1" 
+AR Path="/5512F1A5/55108CDA" Ref="#PWR066"  Part="1" 
+AR Path="/55139FA9/55108CDA" Ref="#PWR073"  Part="1" 
+AR Path="/5510BF5A/55108CDA" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H 7800 3550 50  0001 C CNN
+F 1 "+5V" H 7800 3840 50  0000 C CNN
+F 2 "" H 7800 3700 60  0000 C CNN
+F 3 "" H 7800 3700 60  0000 C CNN
+	1    7800 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 3850 7800 3700
+Wire Wire Line
+	7800 4150 7800 4250
+Wire Wire Line
+	4350 4000 4350 4200
+Wire Wire Line
+	5750 4050 5600 4050
+Wire Wire Line
+	5600 4050 5600 4250
+Wire Wire Line
+	6750 4250 6750 4150
+Wire Wire Line
+	6750 4150 6700 4150
+$EndSCHEMATC
