@@ -1,0 +1,424 @@
+EESchema Schematic File Version 4
+LIBS:bbb_alien_harness-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 12
+Title "BBB Alien Cape"
+Date "2018-04-28"
+Rev "1.0"
+Comp "A.C.M.E"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L bbb_alien_harness:INA138 U9
+U 1 1 5AD78EB9
+P 4000 5250
+F 0 "U9" H 4000 5715 50  0000 C CNN
+F 1 "INA138" H 4000 5624 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 4090 5210 50  0001 C CNN
+F 3 "" H 4090 5210 50  0001 C CNN
+	1    4000 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R23
+U 1 1 5AD78FE2
+P 4000 4500
+F 0 "R23" V 3900 4500 50  0000 C CNN
+F 1 "0.020" V 4000 4500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0612" V 3930 4500 30  0001 C CNN
+F 3 "" H 4000 4500 30  0000 C CNN
+	1    4000 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:R R25
+U 1 1 5AD7908B
+P 4600 5700
+F 0 "R25" H 4670 5746 50  0000 L CNN
+F 1 "75k" H 4670 5655 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 4530 5700 30  0001 C CNN
+F 3 "" H 4600 5700 30  0000 C CNN
+	1    4600 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR037
+U 1 1 5AD79127
+P 3050 5750
+F 0 "#PWR037" H 3050 5500 50  0001 C CNN
+F 1 "GND" H 3055 5577 50  0000 C CNN
+F 2 "" H 3050 5750 60  0000 C CNN
+F 3 "" H 3050 5750 60  0000 C CNN
+	1    3050 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 5550 4600 5550
+$Comp
+L power:+3.3V #PWR036
+U 1 1 5AD791A7
+P 3050 5250
+F 0 "#PWR036" H 3050 5100 50  0001 C CNN
+F 1 "+3.3V" H 3065 5423 50  0000 C CNN
+F 2 "" H 3050 5250 60  0000 C CNN
+F 3 "" H 3050 5250 60  0000 C CNN
+	1    3050 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 5050 3500 4500
+Text HLabel 8000 4500 2    50   Output ~ 0
+OUT2
+Wire Wire Line
+	4500 5050 4500 4500
+Wire Wire Line
+	4500 4500 8000 4500
+$Comp
+L power:+3.3V #PWR042
+U 1 1 5AD797EC
+P 5400 5350
+F 0 "#PWR042" H 5400 5200 50  0001 C CNN
+F 1 "+3.3V" H 5415 5523 50  0000 C CNN
+F 2 "" H 5400 5350 60  0000 C CNN
+F 3 "" H 5400 5350 60  0000 C CNN
+	1    5400 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR043
+U 1 1 5AD7A4CF
+P 5400 6150
+F 0 "#PWR043" H 5400 5900 50  0001 C CNN
+F 1 "GNDA" H 5405 5977 50  0000 C CNN
+F 2 "" H 5400 6150 60  0000 C CNN
+F 3 "" H 5400 6150 60  0000 C CNN
+	1    5400 6150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L device:C C16
+U 1 1 5AD7A656
+P 3050 5500
+F 0 "C16" H 3165 5546 50  0000 L CNN
+F 1 "0.1uF" H 3165 5455 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3088 5350 30  0001 C CNN
+F 3 "" H 3050 5500 60  0000 C CNN
+	1    3050 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 5250 3050 5300
+Wire Wire Line
+	3050 5650 3050 5700
+Wire Wire Line
+	3050 5300 3500 5300
+Wire Wire Line
+	3500 5300 3500 5400
+Connection ~ 3050 5300
+Wire Wire Line
+	3050 5300 3050 5350
+Wire Wire Line
+	3500 5550 3500 5700
+Wire Wire Line
+	3500 5700 3050 5700
+Connection ~ 3050 5700
+Wire Wire Line
+	3050 5700 3050 5750
+$Comp
+L bbb_alien_harness:AD8542 U10
+U 2 1 5AD7C675
+P 5450 5750
+F 0 "U10" H 5500 6000 50  0000 L CNN
+F 1 "AD8542" H 5500 5500 50  0000 L CNN
+F 2 "Housings_SSOP:TSSOP-8_4.4x3mm_Pitch0.65mm" H 5450 5800 50  0001 C CNN
+F 3 "" H 5450 5800 50  0001 C CNN
+	2    5450 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 5950 4950 6400
+Wire Wire Line
+	4950 6400 5950 6400
+Wire Wire Line
+	5950 6400 5950 5750
+Wire Wire Line
+	5950 5750 5900 5750
+Text HLabel 8000 5750 2    50   Output ~ 0
+I2sense
+$Comp
+L power:GNDA #PWR039
+U 1 1 5AD83941
+P 4600 5950
+F 0 "#PWR039" H 4600 5700 50  0001 C CNN
+F 1 "GNDA" V 4605 5777 50  0000 C CNN
+F 2 "" H 4600 5950 60  0000 C CNN
+F 3 "" H 4600 5950 60  0000 C CNN
+	1    4600 5950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 5950 4600 5850
+$Comp
+L bbb_alien_harness:INA138 U8
+U 1 1 5AD84638
+P 4000 2350
+F 0 "U8" H 4000 2815 50  0000 C CNN
+F 1 "INA138" H 4000 2724 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 4090 2310 50  0001 C CNN
+F 3 "" H 4090 2310 50  0001 C CNN
+	1    4000 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R22
+U 1 1 5AD8463E
+P 4000 1600
+F 0 "R22" V 3793 1600 50  0000 C CNN
+F 1 "0.020" V 3884 1600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0612" V 3930 1600 30  0001 C CNN
+F 3 "" H 4000 1600 30  0000 C CNN
+	1    4000 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R24
+U 1 1 5AD84644
+P 4600 2800
+F 0 "R24" H 4670 2846 50  0000 L CNN
+F 1 "75k" H 4670 2755 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 4530 2800 30  0001 C CNN
+F 3 "" H 4600 2800 30  0000 C CNN
+	1    4600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR035
+U 1 1 5AD8464A
+P 3050 2850
+F 0 "#PWR035" H 3050 2600 50  0001 C CNN
+F 1 "GND" H 3055 2677 50  0000 C CNN
+F 2 "" H 3050 2850 60  0000 C CNN
+F 3 "" H 3050 2850 60  0000 C CNN
+	1    3050 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2650 4600 2650
+$Comp
+L power:+3.3V #PWR034
+U 1 1 5AD84651
+P 3050 2350
+F 0 "#PWR034" H 3050 2200 50  0001 C CNN
+F 1 "+3.3V" H 3065 2523 50  0000 C CNN
+F 2 "" H 3050 2350 60  0000 C CNN
+F 3 "" H 3050 2350 60  0000 C CNN
+	1    3050 2350
+	1    0    0    -1  
+$EndComp
+Text HLabel 3050 1600 0    50   Input ~ 0
+IN1
+Wire Wire Line
+	3050 1600 3500 1600
+Wire Wire Line
+	3500 2150 3500 1600
+Connection ~ 3500 1600
+Wire Wire Line
+	3500 1600 3850 1600
+Text HLabel 8000 1600 2    50   Output ~ 0
+OUT1
+Wire Wire Line
+	4150 1600 4500 1600
+Wire Wire Line
+	4500 2150 4500 1600
+Connection ~ 4500 1600
+Wire Wire Line
+	4500 1600 8000 1600
+$Comp
+L power:+3.3V #PWR040
+U 1 1 5AD84661
+P 5400 2450
+F 0 "#PWR040" H 5400 2300 50  0001 C CNN
+F 1 "+3.3V" H 5415 2623 50  0000 C CNN
+F 2 "" H 5400 2450 60  0000 C CNN
+F 3 "" H 5400 2450 60  0000 C CNN
+	1    5400 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR041
+U 1 1 5AD84667
+P 5400 3250
+F 0 "#PWR041" H 5400 3000 50  0001 C CNN
+F 1 "GNDA" H 5405 3077 50  0000 C CNN
+F 2 "" H 5400 3250 60  0000 C CNN
+F 3 "" H 5400 3250 60  0000 C CNN
+	1    5400 3250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L device:C C15
+U 1 1 5AD8466D
+P 3050 2600
+F 0 "C15" H 3165 2646 50  0000 L CNN
+F 1 "0.1uF" H 3165 2555 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3088 2450 30  0001 C CNN
+F 3 "" H 3050 2600 60  0000 C CNN
+	1    3050 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2350 3050 2400
+Wire Wire Line
+	3050 2750 3050 2800
+Wire Wire Line
+	3050 2400 3500 2400
+Wire Wire Line
+	3500 2400 3500 2500
+Connection ~ 3050 2400
+Wire Wire Line
+	3050 2400 3050 2450
+Wire Wire Line
+	3500 2650 3500 2800
+Wire Wire Line
+	3500 2800 3050 2800
+Connection ~ 3050 2800
+Wire Wire Line
+	3050 2800 3050 2850
+Wire Wire Line
+	4950 3050 4950 3500
+Wire Wire Line
+	4950 3500 5950 3500
+Wire Wire Line
+	5950 3500 5950 2850
+Wire Wire Line
+	5950 2850 5900 2850
+Connection ~ 4600 2650
+Text HLabel 8000 2850 2    50   Output ~ 0
+I1sense
+Wire Wire Line
+	4950 2650 4600 2650
+$Comp
+L power:GNDA #PWR038
+U 1 1 5AD846BD
+P 4600 3050
+F 0 "#PWR038" H 4600 2800 50  0001 C CNN
+F 1 "GNDA" H 4605 2877 50  0000 C CNN
+F 2 "" H 4600 3050 60  0000 C CNN
+F 3 "" H 4600 3050 60  0000 C CNN
+	1    4600 3050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3050 4600 2950
+$Comp
+L bbb_alien_harness:AD8542 U10
+U 1 1 5AD8A5EF
+P 5450 2850
+F 0 "U10" H 5550 3050 50  0000 L CNN
+F 1 "AD8542" H 5600 2550 50  0000 L CNN
+F 2 "Housings_SSOP:TSSOP-8_4.4x3mm_Pitch0.65mm" H 5450 2900 50  0001 C CNN
+F 3 "" H 5450 2900 50  0001 C CNN
+	1    5450 2850
+	1    0    0    -1  
+$EndComp
+Text Notes 4200 5800 0    50   ~ 0
+15x GAIN
+Text Notes 4200 2900 0    50   ~ 0
+15x GAIN
+Text Notes 3750 1750 0    50   ~ 0
+100mV @ 5A
+Text Notes 3800 4450 0    50   ~ 0
+100mV @ 5A
+$Sheet
+S 6900 2750 550  200 
+U 5AE7F059
+F0 "sheet5AE7F055" 50
+F1 "adc_clamp_filter.sch" 50
+F2 "IN" I L 6900 2850 50 
+F3 "OUT" O R 7450 2850 50 
+$EndSheet
+$Sheet
+S 6900 5650 550  200 
+U 5AE871B0
+F0 "sheet5AE871AC" 50
+F1 "adc_clamp_filter.sch" 50
+F2 "IN" I L 6900 5750 50 
+F3 "OUT" O R 7450 5750 50 
+$EndSheet
+$Comp
+L power:GND #PWR045
+U 1 1 5AEB60CB
+P 9850 4000
+F 0 "#PWR045" H 9850 3750 50  0001 C CNN
+F 1 "GND" H 9855 3827 50  0000 C CNN
+F 2 "" H 9850 4000 60  0000 C CNN
+F 3 "" H 9850 4000 60  0000 C CNN
+	1    9850 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR044
+U 1 1 5AEB60D1
+P 9850 3500
+F 0 "#PWR044" H 9850 3350 50  0001 C CNN
+F 1 "+3.3V" H 9865 3673 50  0000 C CNN
+F 2 "" H 9850 3500 60  0000 C CNN
+F 3 "" H 9850 3500 60  0000 C CNN
+	1    9850 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C17
+U 1 1 5AEB60D7
+P 9850 3750
+F 0 "C17" H 9965 3796 50  0000 L CNN
+F 1 "0.1uF" H 9965 3705 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9888 3600 30  0001 C CNN
+F 3 "" H 9850 3750 60  0000 C CNN
+	1    9850 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 3900 9850 4000
+Wire Wire Line
+	9850 3500 9850 3600
+Wire Notes Line
+	9300 3100 9300 4400
+Wire Notes Line
+	9300 4400 10450 4400
+Wire Notes Line
+	10450 4400 10450 3100
+Wire Notes Line
+	10450 3100 9300 3100
+Text Notes 10250 4350 2    50   ~ 0
+U10 DECOUPLING CAP
+Wire Wire Line
+	3850 4500 3500 4500
+Wire Wire Line
+	4150 4500 4500 4500
+Connection ~ 4500 4500
+Connection ~ 4600 5550
+Wire Wire Line
+	4950 5550 4600 5550
+Wire Wire Line
+	6900 2850 5950 2850
+Connection ~ 5950 2850
+Wire Wire Line
+	7450 2850 8000 2850
+Wire Wire Line
+	5950 5750 6900 5750
+Connection ~ 5950 5750
+Wire Wire Line
+	7450 5750 8000 5750
+Text HLabel 3050 4500 0    50   Input ~ 0
+IN2
+Wire Wire Line
+	3050 4500 3500 4500
+Connection ~ 3500 4500
+$EndSCHEMATC

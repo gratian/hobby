@@ -1,0 +1,286 @@
+EESchema Schematic File Version 4
+LIBS:bbb_alien_harness-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L bbb_alien_harness:ACT4065A U?
+U 1 1 5AD26B8F
+P 5650 3350
+F 0 "U?" H 5650 3815 50  0000 C CNN
+F 1 "ACT4065A" H 5650 3724 50  0000 C CNN
+F 2 "" H 5600 3350 50  0001 C CNN
+F 3 "" H 5600 3350 50  0001 C CNN
+	1    5650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5AD26B96
+P 4600 3450
+F 0 "C?" H 4715 3496 50  0000 L CNN
+F 1 "10uF" H 4715 3405 50  0000 L CNN
+F 2 "" H 4638 3300 30  0000 C CNN
+F 3 "" H 4600 3450 60  0000 C CNN
+	1    4600 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5AD26B9D
+P 6150 3800
+F 0 "C?" H 6265 3846 50  0000 L CNN
+F 1 "2.2nF" H 6265 3755 50  0000 L CNN
+F 2 "" H 6188 3650 30  0000 C CNN
+F 3 "" H 6150 3800 60  0000 C CNN
+	1    6150 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5AD26BA4
+P 5000 3150
+F 0 "C?" H 4885 3104 50  0000 R CNN
+F 1 "10nF" H 4885 3195 50  0000 R CNN
+F 2 "" H 5038 3000 30  0000 C CNN
+F 3 "" H 5000 3150 60  0000 C CNN
+	1    5000 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L device:CP C?
+U 1 1 5AD26BAB
+P 4150 3450
+F 0 "C?" H 4268 3496 50  0000 L CNN
+F 1 "47uF" H 4268 3405 50  0000 L CNN
+F 2 "" H 4188 3300 30  0000 C CNN
+F 3 "" H 4150 3450 60  0000 C CNN
+	1    4150 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:CP C?
+U 1 1 5AD26BB2
+P 7400 3900
+F 0 "C?" H 7518 3946 50  0000 L CNN
+F 1 "100uF" H 7518 3855 50  0000 L CNN
+F 2 "" H 7438 3750 30  0000 C CNN
+F 3 "" H 7400 3900 60  0000 C CNN
+	1    7400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:INDUCTOR L?
+U 1 1 5AD26BB9
+P 7550 3350
+F 0 "L?" V 7766 3350 50  0000 C CNN
+F 1 "33uH" V 7675 3350 50  0000 C CNN
+F 2 "" H 7550 3350 60  0000 C CNN
+F 3 "" H 7550 3350 60  0000 C CNN
+	1    7550 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+24V #PWR0109
+U 1 1 5AD26BC0
+P 4150 3200
+F 0 "#PWR0109" H 4150 3050 50  0001 C CNN
+F 1 "+24V" H 4165 3373 50  0000 C CNN
+F 2 "" H 4150 3200 60  0000 C CNN
+F 3 "" H 4150 3200 60  0000 C CNN
+	1    4150 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3300 5200 3300
+Wire Wire Line
+	4150 3300 4600 3300
+Connection ~ 4600 3300
+Wire Wire Line
+	4150 3200 4150 3300
+Connection ~ 4150 3300
+$Comp
+L power:GND #PWR0110
+U 1 1 5AD26BCB
+P 4150 3650
+F 0 "#PWR0110" H 4150 3400 50  0001 C CNN
+F 1 "GND" H 4155 3477 50  0000 C CNN
+F 2 "" H 4150 3650 60  0000 C CNN
+F 3 "" H 4150 3650 60  0000 C CNN
+	1    4150 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3650 4150 3600
+Wire Wire Line
+	4150 3600 4600 3600
+Connection ~ 4150 3600
+$Comp
+L power:GND #PWR0111
+U 1 1 5AD26BD4
+P 5150 3600
+F 0 "#PWR0111" H 5150 3350 50  0001 C CNN
+F 1 "GND" H 5155 3427 50  0000 C CNN
+F 2 "" H 5150 3600 60  0000 C CNN
+F 3 "" H 5150 3600 60  0000 C CNN
+	1    5150 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3600 5200 3600
+$Comp
+L device:R R?
+U 1 1 5AD26BDB
+P 6550 3800
+F 0 "R?" H 6620 3846 50  0000 L CNN
+F 1 "10k" H 6620 3755 50  0000 L CNN
+F 2 "" V 6480 3800 30  0000 C CNN
+F 3 "" H 6550 3800 30  0000 C CNN
+	1    6550 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3650 6550 3600
+Wire Wire Line
+	6550 3600 6100 3600
+$Comp
+L power:GND #PWR0112
+U 1 1 5AD26BE4
+P 6350 4400
+F 0 "#PWR0112" H 6350 4150 50  0001 C CNN
+F 1 "GND" H 6355 4227 50  0000 C CNN
+F 2 "" H 6350 4400 60  0000 C CNN
+F 3 "" H 6350 4400 60  0000 C CNN
+	1    6350 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5AD26BEA
+P 6850 3600
+F 0 "R?" V 6643 3600 50  0000 C CNN
+F 1 "52k" V 6734 3600 50  0000 C CNN
+F 2 "" V 6780 3600 30  0000 C CNN
+F 3 "" H 6850 3600 30  0000 C CNN
+	1    6850 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 3600 6550 3600
+Connection ~ 6550 3600
+Wire Wire Line
+	6150 3650 6150 3450
+Wire Wire Line
+	6150 3450 6100 3450
+$Comp
+L device:R R?
+U 1 1 5AD26BF5
+P 6150 4200
+F 0 "R?" H 6220 4246 50  0000 L CNN
+F 1 "8.2k" H 6220 4155 50  0000 L CNN
+F 2 "" V 6080 4200 30  0000 C CNN
+F 3 "" H 6150 4200 30  0000 C CNN
+	1    6150 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3950 6150 4050
+Wire Wire Line
+	6150 4350 6350 4350
+Wire Wire Line
+	6350 4350 6350 4400
+Wire Wire Line
+	6550 3950 6550 4350
+Wire Wire Line
+	6550 4350 6350 4350
+Connection ~ 6350 4350
+Wire Wire Line
+	5150 3150 5200 3150
+Wire Wire Line
+	5200 3450 4850 3450
+Wire Wire Line
+	4850 3450 4850 3150
+$Comp
+L device:C C?
+U 1 1 5AD26C05
+P 7850 3900
+F 0 "C?" H 7965 3946 50  0000 L CNN
+F 1 "1uF" H 7965 3855 50  0000 L CNN
+F 2 "" H 7888 3750 30  0000 C CNN
+F 3 "" H 7850 3900 60  0000 C CNN
+	1    7850 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3600 7400 3600
+Wire Wire Line
+	7400 3600 7400 3750
+Wire Wire Line
+	7400 3600 7850 3600
+Connection ~ 7400 3600
+Wire Wire Line
+	7850 3600 7850 3750
+Connection ~ 7850 3600
+Wire Wire Line
+	7850 4050 7850 4350
+Wire Wire Line
+	7850 4350 7400 4350
+Connection ~ 6550 4350
+Wire Wire Line
+	7400 4050 7400 4350
+Connection ~ 7400 4350
+Wire Wire Line
+	7400 4350 7150 4350
+$Comp
+L device:D_Schottky D?
+U 1 1 5AD26C18
+P 7150 4050
+F 0 "D?" V 7104 4129 50  0000 L CNN
+F 1 "DB2W40300L" V 7300 3550 50  0000 L CNN
+F 2 "" H 7150 4050 60  0000 C CNN
+F 3 "" H 7150 4050 60  0000 C CNN
+	1    7150 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7150 4200 7150 4350
+Connection ~ 7150 4350
+Wire Wire Line
+	7150 4350 6550 4350
+Wire Wire Line
+	7850 3350 7850 3600
+Wire Wire Line
+	4850 2750 4850 3150
+Connection ~ 4850 3150
+Wire Wire Line
+	7150 3900 7150 3350
+Wire Wire Line
+	7150 3350 7250 3350
+Wire Wire Line
+	7150 3350 7150 2750
+Wire Wire Line
+	7150 2750 4850 2750
+Connection ~ 7150 3350
+Text Notes 5500 5000 0    50   ~ 0
+5V STEP-DOWN SW. REGULATOR
+NoConn ~ 6100 3300
+Text HLabel 3800 3300 0    50   Input ~ 0
++24V_IN
+Text HLabel 8100 3600 2    50   Input ~ 0
++5V_OUT
+Wire Wire Line
+	8100 3600 7850 3600
+Wire Wire Line
+	3800 3300 4150 3300
+$EndSCHEMATC

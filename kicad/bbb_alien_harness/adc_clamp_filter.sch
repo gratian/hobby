@@ -1,0 +1,118 @@
+EESchema Schematic File Version 4
+LIBS:bbb_alien_harness-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 12
+Title "BBB Alien Cape"
+Date "2018-04-28"
+Rev "1.0"
+Comp "A.C.M.E"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 6500 2850 1    50   Output ~ 0
+VADC
+$Comp
+L device:D_Schottky D9
+U 1 1 5AE5D41C
+P 6500 3100
+AR Path="/5AD77C4D/5AE7F059/5AE5D41C" Ref="D9"  Part="1" 
+AR Path="/5AD77C4D/5AE871B0/5AE5D41C" Ref="D11"  Part="1" 
+AR Path="/5B1360E2/5AE5D41C" Ref="D13"  Part="1" 
+F 0 "D11" V 6454 3179 50  0000 L CNN
+F 1 "DB2W40300L" V 6500 2500 50  0000 L CNN
+F 2 "footprints:SMD-Mini2-F3-B" H 6500 3100 60  0001 C CNN
+F 3 "" H 6500 3100 60  0000 C CNN
+	1    6500 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 2850 6500 2950
+$Comp
+L device:D_Schottky D10
+U 1 1 5AE5D424
+P 6500 3500
+AR Path="/5AD77C4D/5AE7F059/5AE5D424" Ref="D10"  Part="1" 
+AR Path="/5AD77C4D/5AE871B0/5AE5D424" Ref="D12"  Part="1" 
+AR Path="/5B1360E2/5AE5D424" Ref="D14"  Part="1" 
+F 0 "D12" V 6454 3579 50  0000 L CNN
+F 1 "DB2W40300L" V 6500 2900 50  0000 L CNN
+F 2 "footprints:SMD-Mini2-F3-B" H 6500 3500 60  0001 C CNN
+F 3 "" H 6500 3500 60  0000 C CNN
+	1    6500 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR046
+U 1 1 5AE5D42B
+P 6500 3750
+AR Path="/5AD77C4D/5AE7F059/5AE5D42B" Ref="#PWR046"  Part="1" 
+AR Path="/5AD77C4D/5AE871B0/5AE5D42B" Ref="#PWR047"  Part="1" 
+AR Path="/5B1360E2/5AE5D42B" Ref="#PWR065"  Part="1" 
+F 0 "#PWR047" H 6500 3500 50  0001 C CNN
+F 1 "GND" H 6505 3577 50  0000 C CNN
+F 2 "" H 6500 3750 60  0000 C CNN
+F 3 "" H 6500 3750 60  0000 C CNN
+	1    6500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R26
+U 1 1 5AE5D431
+P 5400 3300
+AR Path="/5AD77C4D/5AE7F059/5AE5D431" Ref="R26"  Part="1" 
+AR Path="/5AD77C4D/5AE871B0/5AE5D431" Ref="R27"  Part="1" 
+AR Path="/5B1360E2/5AE5D431" Ref="R29"  Part="1" 
+F 0 "R27" V 5300 3250 50  0000 L CNN
+F 1 "75" V 5400 3250 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5330 3300 30  0001 C CNN
+F 3 "" H 5400 3300 30  0000 C CNN
+	1    5400 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L device:C C18
+U 1 1 5AE5D438
+P 5600 3550
+AR Path="/5AD77C4D/5AE7F059/5AE5D438" Ref="C18"  Part="1" 
+AR Path="/5AD77C4D/5AE871B0/5AE5D438" Ref="C19"  Part="1" 
+AR Path="/5B1360E2/5AE5D438" Ref="C21"  Part="1" 
+F 0 "C19" H 5715 3596 50  0000 L CNN
+F 1 "1nF" H 5715 3505 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5638 3400 30  0001 C CNN
+F 3 "" H 5600 3550 60  0000 C CNN
+	1    5600 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3300 5600 3300
+Wire Wire Line
+	6500 3250 6500 3300
+Connection ~ 6500 3300
+Wire Wire Line
+	6500 3300 6500 3350
+Wire Wire Line
+	5600 3400 5600 3300
+Connection ~ 5600 3300
+Wire Wire Line
+	5600 3300 6500 3300
+Wire Wire Line
+	6500 3650 6500 3700
+Wire Wire Line
+	6500 3700 5600 3700
+Connection ~ 6500 3700
+Wire Wire Line
+	6500 3700 6500 3750
+Wire Wire Line
+	6500 3300 6800 3300
+Text HLabel 5100 3300 0    50   Input ~ 0
+IN
+Wire Wire Line
+	5100 3300 5250 3300
+Text HLabel 6800 3300 2    50   Output ~ 0
+OUT
+$EndSCHEMATC

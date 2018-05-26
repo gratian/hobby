@@ -1,0 +1,25 @@
+Drill report for /home/gratian/hobby/kicad/bbb_alien_harness/bbb_alien_harness.kicad_pcb
+Created on Wed 13 Jun 2018 06:41:31 PM CDT
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'bbb_alien_harness-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.51mm  0.020"  (18 holes)
+    T2  1.00mm  0.039"  (92 holes)
+    T3  1.30mm  0.051"  (6 holes)
+    T4  3.17mm  0.125"  (3 holes)
+
+    Total plated holes count 119
+
+
+Drill file 'bbb_alien_harness-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0

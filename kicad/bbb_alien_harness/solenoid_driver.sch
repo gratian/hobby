@@ -1,0 +1,186 @@
+EESchema Schematic File Version 4
+LIBS:bbb_alien_harness-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 12 12
+Title "BBB Alien Cape"
+Date "2018-04-28"
+Rev "1.0"
+Comp "A.C.M.E"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L bbb_alien_harness:DRV8872 U7
+U 1 1 5AD1F8B4
+P 5650 3450
+F 0 "U7" H 5650 3915 50  0000 C CNN
+F 1 "DRV8872" H 5650 3824 50  0000 C CNN
+F 2 "Housings_SOIC:TI_SO-PowerPAD-8" H 5700 3450 50  0001 C CNN
+F 3 "" H 5700 3450 50  0001 C CNN
+	1    5650 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C13
+U 1 1 5AD1FCB3
+P 5400 4350
+F 0 "C13" H 5515 4396 50  0000 L CNN
+F 1 "0.1uF" H 5515 4305 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5438 4200 30  0001 C CNN
+F 3 "" H 5400 4350 60  0000 C CNN
+	1    5400 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:CP C14
+U 1 1 5AD1FF17
+P 5900 4350
+F 0 "C14" H 6018 4396 50  0000 L CNN
+F 1 "47uF" H 6018 4305 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_6.3x5.8" H 5938 4200 30  0001 C CNN
+F 3 "" H 5900 4350 60  0000 C CNN
+	1    5900 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR032
+U 1 1 5AD1FFF5
+P 5650 4550
+F 0 "#PWR032" H 5650 4300 50  0001 C CNN
+F 1 "GND" H 5655 4377 50  0000 C CNN
+F 2 "" H 5650 4550 60  0000 C CNN
+F 3 "" H 5650 4550 60  0000 C CNN
+	1    5650 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR031
+U 1 1 5AD209E7
+P 5100 3250
+F 0 "#PWR031" H 5100 3000 50  0001 C CNN
+F 1 "GND" V 5105 3122 50  0000 R CNN
+F 2 "" H 5100 3250 60  0000 C CNN
+F 3 "" H 5100 3250 60  0000 C CNN
+	1    5100 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 3250 5150 3250
+Wire Wire Line
+	5400 4500 5650 4500
+Wire Wire Line
+	5650 4550 5650 4500
+Wire Wire Line
+	5650 4500 5900 4500
+$Comp
+L device:R R19
+U 1 1 5AD20E88
+P 4950 3550
+F 0 "R19" V 4850 3550 50  0000 C CNN
+F 1 "100k" V 4950 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 4880 3550 30  0001 C CNN
+F 3 "" H 4950 3550 30  0000 C CNN
+	1    4950 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 3550 5150 3550
+$Comp
+L power:GND #PWR030
+U 1 1 5AD2120E
+P 4700 3550
+F 0 "#PWR030" H 4700 3300 50  0001 C CNN
+F 1 "GND" V 4705 3422 50  0000 R CNN
+F 2 "" H 4700 3550 60  0000 C CNN
+F 3 "" H 4700 3550 60  0000 C CNN
+	1    4700 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 3550 4800 3550
+Text HLabel 4700 3400 0    50   Input ~ 0
+SOLENOID_ON
+Wire Wire Line
+	5150 3400 4700 3400
+$Comp
+L device:R R20
+U 1 1 5AD2A3B3
+P 6450 3800
+F 0 "R20" V 6550 3800 50  0000 C CNN
+F 1 "1" V 6450 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6380 3800 30  0001 C CNN
+F 3 "" H 6450 3800 30  0000 C CNN
+	1    6450 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR033
+U 1 1 5AD2A430
+P 6550 3950
+F 0 "#PWR033" H 6550 3700 50  0001 C CNN
+F 1 "GND" V 6555 3822 50  0000 R CNN
+F 2 "" H 6550 3950 60  0000 C CNN
+F 3 "" H 6550 3950 60  0000 C CNN
+	1    6550 3950
+	1    0    0    -1  
+$EndComp
+Text Notes 6800 3900 0    50   ~ 0
+522mA\nLIMIT
+Text HLabel 7500 3550 2    50   Output ~ 0
+S+
+Text HLabel 7500 3250 2    50   Output ~ 0
+S-
+Text HLabel 4700 4200 0    50   Input ~ 0
+SOLENOID_PWR
+Wire Wire Line
+	4700 4200 5400 4200
+Wire Wire Line
+	6150 4200 5900 4200
+$Comp
+L device:R R21
+U 1 1 5ADCFE5C
+P 6650 3800
+F 0 "R21" V 6750 3800 50  0000 C CNN
+F 1 "2" V 6650 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 6580 3800 30  0001 C CNN
+F 3 "" H 6650 3800 30  0000 C CNN
+	1    6650 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6450 3950 6550 3950
+Wire Wire Line
+	6650 3950 6550 3950
+Connection ~ 6550 3950
+Wire Wire Line
+	6450 3650 6550 3650
+Wire Wire Line
+	6150 3400 6550 3400
+Wire Wire Line
+	6550 3400 6550 3650
+Connection ~ 6550 3650
+Wire Wire Line
+	6550 3650 6650 3650
+Wire Wire Line
+	6150 3550 7500 3550
+Wire Wire Line
+	6150 3250 7500 3250
+Connection ~ 5650 4500
+Wire Wire Line
+	6150 3700 6150 4200
+Wire Wire Line
+	5650 4000 5650 4500
+Wire Wire Line
+	5400 4200 5900 4200
+Connection ~ 5400 4200
+Connection ~ 5900 4200
+Text HLabel 4700 3700 0    50   Output ~ 0
+~SOLENOID_FAULT
+Wire Wire Line
+	4700 3700 5150 3700
+$EndSCHEMATC

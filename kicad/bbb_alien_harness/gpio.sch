@@ -1,0 +1,162 @@
+EESchema Schematic File Version 4
+LIBS:bbb_alien_harness-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 15 12
+Title "BBB Alien Cape"
+Date "2018-04-28"
+Rev "1.0"
+Comp "A.C.M.E"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L conn:CONN_02X04 P5
+U 1 1 5AE8AA3B
+P 7300 3650
+F 0 "P5" H 7300 4015 50  0000 C CNN
+F 1 "CONN_02X04" H 7300 3924 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x04_Pitch2.54mm_SMD" H 7300 2450 60  0001 C CNN
+F 3 "" H 7300 2450 60  0000 C CNN
+	1    7300 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 5450 3650 2    50   BiDi ~ 0
+GPIO1_16
+Text GLabel 6950 3700 0    50   BiDi ~ 0
+GPIO1_17
+Text GLabel 3900 3350 0    50   BiDi ~ 0
+EHRPWM1B
+Text GLabel 6950 3800 0    50   BiDi ~ 0
+GPIO3_19
+$Comp
+L bbb_alien_harness:SN74LVC2G241 U13
+U 1 1 5AED7EF3
+P 4700 3400
+F 0 "U13" H 4700 3865 50  0000 C CNN
+F 1 "SN74LVC2G241" H 4700 3774 50  0000 C CNN
+F 2 "Housings_SSOP:SSOP-8_2.95x2.8mm_Pitch0.65mm" H 4700 3350 50  0001 C CNN
+F 3 "" H 4700 3350 50  0001 C CNN
+	1    4700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR063
+U 1 1 5AED7F88
+P 5450 3000
+F 0 "#PWR063" H 5450 2850 50  0001 C CNN
+F 1 "+3.3V" H 5465 3173 50  0000 C CNN
+F 2 "" H 5450 3000 60  0000 C CNN
+F 3 "" H 5450 3000 60  0000 C CNN
+	1    5450 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L device:C C20
+U 1 1 5AED8003
+P 4700 2750
+F 0 "C20" V 4448 2750 50  0000 C CNN
+F 1 "0.1uF" V 4539 2750 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4738 2600 30  0001 C CNN
+F 3 "" H 4700 2750 60  0000 C CNN
+	1    4700 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR062
+U 1 1 5AED80EF
+P 4100 3800
+F 0 "#PWR062" H 4100 3550 50  0001 C CNN
+F 1 "GND" H 4105 3627 50  0000 C CNN
+F 2 "" H 4100 3800 60  0000 C CNN
+F 3 "" H 4100 3800 60  0000 C CNN
+	1    4100 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3650 4100 3650
+Wire Wire Line
+	4100 3650 4100 3800
+Wire Wire Line
+	4250 3200 4100 3200
+Wire Wire Line
+	4100 3200 4100 3650
+Connection ~ 4100 3650
+Wire Wire Line
+	4550 2750 4100 2750
+Wire Wire Line
+	4100 2750 4100 3200
+Connection ~ 4100 3200
+Wire Wire Line
+	5150 3200 5350 3200
+Wire Wire Line
+	5350 3200 5350 3000
+Wire Wire Line
+	5350 2750 4850 2750
+Wire Wire Line
+	5450 3000 5350 3000
+Connection ~ 5350 3000
+Wire Wire Line
+	5350 3000 5350 2750
+Wire Wire Line
+	3900 3350 4250 3350
+Wire Wire Line
+	5450 3650 5150 3650
+Wire Wire Line
+	5150 3350 5350 3350
+Wire Wire Line
+	5350 3350 5350 3200
+Connection ~ 5350 3200
+Wire Wire Line
+	7050 3500 5150 3500
+Wire Wire Line
+	4250 3500 3850 3500
+Wire Wire Line
+	3850 3500 3850 4200
+Wire Wire Line
+	3850 4200 6150 4200
+Wire Wire Line
+	6150 4200 6150 3600
+Wire Wire Line
+	6150 3600 7050 3600
+Wire Wire Line
+	6950 3700 7050 3700
+Wire Wire Line
+	6950 3800 7050 3800
+$Comp
+L power:GND #PWR064
+U 1 1 5AE0060C
+P 7700 3900
+F 0 "#PWR064" H 7700 3650 50  0001 C CNN
+F 1 "GND" H 7705 3727 50  0000 C CNN
+F 2 "" H 7700 3900 60  0000 C CNN
+F 3 "" H 7700 3900 60  0000 C CNN
+	1    7700 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 3500 7700 3500
+Wire Wire Line
+	7700 3500 7700 3600
+Wire Wire Line
+	7550 3600 7700 3600
+Connection ~ 7700 3600
+Wire Wire Line
+	7700 3600 7700 3700
+Wire Wire Line
+	7550 3700 7700 3700
+Connection ~ 7700 3700
+Wire Wire Line
+	7700 3700 7700 3800
+Wire Wire Line
+	7550 3800 7700 3800
+Connection ~ 7700 3800
+Wire Wire Line
+	7700 3800 7700 3900
+Text Notes 7450 4350 2    50   ~ 0
+BUFFERED PWM OUTPUT: 1\nBUFFERED GPIO OUTPUT: 3\nGPIO INPUT/OUTPUT: 5\nPRU ACCESSIBLE GPIO: 7
+$EndSCHEMATC
